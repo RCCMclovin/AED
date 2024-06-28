@@ -17,6 +17,8 @@ compare -> Função para comparar 2 elementos do vetor. Retorna 0 se forem iguai
 vetor* cria_vet(int size);                                                  //Alocação do vetor
 void   free_vet(vetor* vet, void (*freefunc) (void*));                      //Liberação do vetor| freefunc libera os elementos dentro do vetor| Passar NULL caso não seja necessário
 void   add_vet(vetor* vet, void* data);                                     //Adiciona elemento
+int    len_vet(vetor* vet);                                                 //Retorna tamanho atual do vetor
+int    maxSize_vet(vetor* vet);                                             //Retorna tamanho máximo do vetor
 void   cp_vet(vetor* vet1, vetor* vet2);                                    //Copiar vet1 em vet2
 void*  get_vet(vetor* vet, int pos);                                        //Acessa elemento
 void   del_vet(vetor* vet, int pos);                                        //Remove elemento

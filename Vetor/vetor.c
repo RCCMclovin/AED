@@ -18,6 +18,14 @@ vetor* cria_vet(int size){
     return vet;
 }
 
+int len_vet(vetor* vet){
+    return vet->pos;
+}
+
+int maxSize_vet(vetor* vet){
+    return vet->size;
+}
+
 void free_vet(vetor* vet, void (*freefunc) (void*)){
     if(freefunc != NULL) for(int i = 0; i < vet->pos; i++) freefunc(vet->vet[i]);
     free(vet->vet);
