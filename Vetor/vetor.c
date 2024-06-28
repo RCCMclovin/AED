@@ -2,14 +2,6 @@
 #include <stdlib.h>
 #include "vetor.h"
 
-void print_int(void* i){
-    printf("%d ", *((int*) i));
-}
-
-int compara(void* a, void* b){
-    return *((int*) a) - *((int*) b);
-}
-
 vetor* cria_vet(int size){
     vetor* vet = (vetor*) malloc(3*sizeof(int)+size*sizeof(void*));
     vet->size = size;
